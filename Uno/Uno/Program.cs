@@ -10,7 +10,10 @@ namespace Uno
     {
         static void Main(string[] args)
         {
-            
+            UnoGame game = new UnoGame(1);
+            game.PrintGame();
+
+            Console.Read();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Uno
 
     class Deck : CardCollection
     {
-        private Random rand = new Random();
+        private Random _rand = new Random();
         public Deck()
         {
             //add jokers and joker+4
@@ -27,7 +27,7 @@ namespace Uno
             {
                 foreach (Card.CardValue CV in Enum.GetValues(typeof(Card.CardValue)))
                 {
-                    if (CC != Card.CardColor.Black || CV != Card.CardValue.PlusFour || CV != Card.CardValue.Recolor)
+                    if (CC != Card.CardColor.Black && CV != Card.CardValue.PlusFour && CV != Card.CardValue.Recolor)
                     {
                         if (CV == Card.CardValue.Zero)
                         {
@@ -49,7 +49,7 @@ namespace Uno
             List<Card> shuffledCards = new List<Card>();
             while(cards.Count != 0)
             {
-                int r = rand.Next(0, cards.Count - 1);
+                int r = _rand.Next(0, cards.Count - 1);
                 shuffledCards.Add(cards[r]);
                 cards.RemoveAt(r);
             }
@@ -64,6 +64,15 @@ namespace Uno
             cards.Add(deck.cards[0]);
             deck.cards.RemoveAt(0);
         }
+        public override string ToString()
+        {
+            string print = "";
+            foreach (Card card in cards)
+            {
+                print += card.ToString() + "\n"; 
+            }
+            return print;
+        }
     }
 
     class Pile : CardCollection
@@ -72,5 +81,8 @@ namespace Uno
         {
             return cards[cards.Count-1];
         }
+
+        private int _uppers = 0;
+
     }
 }

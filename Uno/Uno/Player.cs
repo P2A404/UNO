@@ -8,13 +8,15 @@ namespace Uno
 {
     class Player
     {
-        public Player(Deck deck)
+        public Player(Deck deck, string name)
         {
             for (int i = 0; i < 7; i++)
             {
                 hand.Draw(deck);
             }
+            Name = name;
         }
-        Hand hand = new Hand();
+        public string  Name;
+        public Hand hand = new Hand();
     }
 }

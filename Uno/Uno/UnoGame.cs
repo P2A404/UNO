@@ -13,10 +13,20 @@ namespace Uno
             players = new Player[playersNum];
             for (int i = 0; i < players.Length; i++)
             {
-                players[i] = new Player(deck);
+                players[i] = new Player(deck,"test");
             }
+            currPlayer = players[0];
+            
         }
+
+        Player currPlayer;
         Player[] players;
         Deck deck = new Deck();
+
+        public void PrintGame()
+        {
+            Console.WriteLine(currPlayer.Name);
+            Console.WriteLine(currPlayer.hand); 
+        }
     }
 }

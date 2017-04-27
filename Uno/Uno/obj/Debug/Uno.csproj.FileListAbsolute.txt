@@ -1,1 +1,7 @@
 C:\Users\alex-\Source\Repos\UNO\Uno\Uno\bin\Debug\Uno.exe.config
+C:\Users\Rasmus\Desktop\Uni\P2\Git\UNO\Uno\Uno\bin\Debug\Uno.exe.config
+C:\Users\Rasmus\Desktop\Uni\P2\Git\UNO\Uno\Uno\obj\Debug\Uno.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Desktop\Uni\P2\Git\UNO\Uno\Uno\bin\Debug\Uno.exe
+C:\Users\Rasmus\Desktop\Uni\P2\Git\UNO\Uno\Uno\bin\Debug\Uno.pdb
+C:\Users\Rasmus\Desktop\Uni\P2\Git\UNO\Uno\Uno\obj\Debug\Uno.exe
+C:\Users\Rasmus\Desktop\Uni\P2\Git\UNO\Uno\Uno\obj\Debug\Uno.pdb
